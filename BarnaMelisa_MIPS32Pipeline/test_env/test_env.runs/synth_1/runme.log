@@ -1,0 +1,544 @@
+
+*** Running vivado
+    with args -log test_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source test_env.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/utils_1/imports/synth_1/test_env.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/utils_1/imports/synth_1/test_env.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top test_env -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25496
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Users/barna/OneDrive/Desktop/Applications/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1223.887 ; gain = 409.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:37]
+INFO: [Synth 8-3491] module 'reg_file' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/reg_file.vhd:27' bound to instance 'reggisterFile' of component 'reg_file' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/reg_file.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/reg_file.vhd:40]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/debouncer.vhd:6' bound to instance 'btn1' of component 'debouncer' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/debouncer.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/debouncer.vhd:12]
+INFO: [Synth 8-3491] module 'IFetch' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:27' bound to instance 'InstructionFetch' of component 'IFetch' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:41]
+INFO: [Synth 8-3491] module 'UDecodificare' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UDecodificare.vhd:27' bound to instance 'udecod' of component 'UDecodificare' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'UDecodificare' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UDecodificare.vhd:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UDecodificare.vhd:67]
+WARNING: [Synth 8-614] signal 'instr' is read in the process but is not in the sensitivity list [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UDecodificare.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'UDecodificare' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UDecodificare.vhd:45]
+INFO: [Synth 8-3491] module 'unitateControl' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateControl.vhd:27' bound to instance 'unitateCtrl' of component 'UnitateControl' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'unitateControl' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateControl.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'unitateControl' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateControl.vhd:41]
+WARNING: [Synth 8-5640] Port 'rt' is missing in component declaration [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:171]
+WARNING: [Synth 8-5640] Port 'rd' is missing in component declaration [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:171]
+WARNING: [Synth 8-5640] Port 'regdst' is missing in component declaration [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:171]
+WARNING: [Synth 8-5640] Port 'rwa' is missing in component declaration [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:171]
+INFO: [Synth 8-3491] module 'unitateExecutie' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:28' bound to instance 'unitateExecutie1' of component 'unitateExecutie' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'unitateExecutie' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:47]
+INFO: [Synth 8-226] default block is never used [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:114]
+WARNING: [Synth 8-614] signal 'rt' is read in the process but is not in the sensitivity list [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:112]
+WARNING: [Synth 8-614] signal 'rd' is read in the process but is not in the sensitivity list [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'unitateExecutie' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:47]
+INFO: [Synth 8-3491] module 'UnitateMemorieMEM' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UnitateMemorieMEM.vhd:28' bound to instance 'unitateMem' of component 'UnitateMemorieMEM' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'UnitateMemorieMEM' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UnitateMemorieMEM.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'UnitateMemorieMEM' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/UnitateMemorieMEM.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:345]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:27' bound to instance 'ssd1' of component 'SSD' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:356]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (0#1) [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:37]
+WARNING: [Synth 8-3848] Net aluIn1 in module/entity unitateExecutie does not have driver. [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:49]
+WARNING: [Synth 8-3848] Net aluIn2 in module/entity unitateExecutie does not have driver. [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/unitateExecutie.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element reg_if_id_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:293]
+WARNING: [Synth 8-6014] Unused sequential element pc_if_id_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element instruction_if_id_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:296]
+WARNING: [Synth 8-6014] Unused sequential element pc_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:299]
+WARNING: [Synth 8-6014] Unused sequential element rd1_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:300]
+WARNING: [Synth 8-6014] Unused sequential element rd2_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:301]
+WARNING: [Synth 8-6014] Unused sequential element extImm_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element memToReg_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:303]
+WARNING: [Synth 8-6014] Unused sequential element regWrite_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:304]
+WARNING: [Synth 8-6014] Unused sequential element memWrite_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:305]
+WARNING: [Synth 8-6014] Unused sequential element branch_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:306]
+WARNING: [Synth 8-6014] Unused sequential element aluOp_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:307]
+WARNING: [Synth 8-6014] Unused sequential element aluSrc_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:308]
+WARNING: [Synth 8-6014] Unused sequential element regDst_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:309]
+WARNING: [Synth 8-6014] Unused sequential element sa_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:310]
+WARNING: [Synth 8-6014] Unused sequential element func_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:311]
+WARNING: [Synth 8-6014] Unused sequential element rt_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:312]
+WARNING: [Synth 8-6014] Unused sequential element rd_id_ex_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:313]
+WARNING: [Synth 8-6014] Unused sequential element memToReg_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:316]
+WARNING: [Synth 8-6014] Unused sequential element regWrite_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:317]
+WARNING: [Synth 8-6014] Unused sequential element memWrite_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element branch_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element zero_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:320]
+WARNING: [Synth 8-6014] Unused sequential element rd2_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:321]
+WARNING: [Synth 8-6014] Unused sequential element aluIesire_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:322]
+WARNING: [Synth 8-6014] Unused sequential element out_ex_mem_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:323]
+WARNING: [Synth 8-6014] Unused sequential element rd_mem_wb_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:326]
+WARNING: [Synth 8-6014] Unused sequential element memToReg_mem_wb_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:327]
+WARNING: [Synth 8-6014] Unused sequential element regWrite_mem_wb_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:328]
+WARNING: [Synth 8-6014] Unused sequential element aluIesire_mem_wb_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:329]
+WARNING: [Synth 8-6014] Unused sequential element memData_mem_wb_reg was removed.  [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:330]
+WARNING: [Synth 8-3848] Net writeAdress in module/entity test_env does not have driver. [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:51]
+WARNING: [Synth 8-7129] Port rd1[31] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[30] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[29] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[28] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[27] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[26] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[25] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[24] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[23] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[22] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[21] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[20] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[19] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[18] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[17] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[16] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[15] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[14] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[13] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[12] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[11] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[10] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[9] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[8] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[7] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[6] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[5] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[4] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[3] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[2] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[1] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd1[0] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluSrc in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[31] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[30] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[29] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[28] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[27] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[26] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[25] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[24] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[23] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[22] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[21] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[20] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[19] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[18] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[17] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[16] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[15] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[14] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[13] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[12] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[11] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[10] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[9] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[8] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[7] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[6] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[5] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[4] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[3] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[2] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[1] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd2[0] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port extImm[31] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port extImm[30] in module unitateExecutie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[15] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module test_env is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.645 ; gain = 499.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.645 ; gain = 499.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.645 ; gain = 499.891
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1314.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/constrs_1/new/constrangere.xdc]
+Finished Parsing XDC File [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/constrs_1/new/constrangere.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/constrs_1/new/constrangere.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1409.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1409.859 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Users/barna/OneDrive/Desktop/Applications/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 1     
+	  14 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design test_env has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[1] driven by constant 0
+WARNING: [Synth 8-7129] Port led[15] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module test_env is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[31] with 1st driver pin 'InstructionFetch/PC_reg[31]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[31] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[30] with 1st driver pin 'InstructionFetch/PC_reg[30]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[30] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[29] with 1st driver pin 'InstructionFetch/PC_reg[29]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[29] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[28] with 1st driver pin 'InstructionFetch/PC_reg[28]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[28] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[27] with 1st driver pin 'InstructionFetch/PC_reg[27]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[27] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[26] with 1st driver pin 'InstructionFetch/PC_reg[26]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[26] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[25] with 1st driver pin 'InstructionFetch/PC_reg[25]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[25] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[24] with 1st driver pin 'InstructionFetch/PC_reg[24]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[24] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[23] with 1st driver pin 'InstructionFetch/PC_reg[23]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[23] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[22] with 1st driver pin 'InstructionFetch/PC_reg[22]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[22] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[21] with 1st driver pin 'InstructionFetch/PC_reg[21]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[21] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[20] with 1st driver pin 'InstructionFetch/PC_reg[20]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[20] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[19] with 1st driver pin 'InstructionFetch/PC_reg[19]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[19] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[18] with 1st driver pin 'InstructionFetch/PC_reg[18]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[18] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[17] with 1st driver pin 'InstructionFetch/PC_reg[17]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[17] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[16] with 1st driver pin 'InstructionFetch/PC_reg[16]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[16] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[15] with 1st driver pin 'InstructionFetch/PC_reg[15]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[15] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[14] with 1st driver pin 'InstructionFetch/PC_reg[14]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[14] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[13] with 1st driver pin 'InstructionFetch/PC_reg[13]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[13] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[12] with 1st driver pin 'InstructionFetch/PC_reg[12]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[12] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[11] with 1st driver pin 'InstructionFetch/PC_reg[11]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[11] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[10] with 1st driver pin 'InstructionFetch/PC_reg[10]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[10] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[9] with 1st driver pin 'InstructionFetch/PC_reg[9]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[9] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[8] with 1st driver pin 'InstructionFetch/PC_reg[8]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[8] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[7] with 1st driver pin 'InstructionFetch/PC_reg[7]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[7] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[6] with 1st driver pin 'InstructionFetch/PC_reg[6]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[6] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[5] with 1st driver pin 'InstructionFetch/PC_reg[5]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[5] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[4] with 1st driver pin 'InstructionFetch/PC_reg[4]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[4] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[3] with 1st driver pin 'InstructionFetch/PC_reg[3]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[3] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[2] with 1st driver pin 'InstructionFetch/PC_reg[2]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[2] with 2nd driver pin 'VCC' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[1] with 1st driver pin 'InstructionFetch/PC_reg[1]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[1] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[0] with 1st driver pin 'InstructionFetch/PC_reg[0]/Q' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin PC[0] with 2nd driver pin 'GND' [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net PC[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.srcs/sources_1/new/iFetch.vhd:79]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|test_env    | reggisterFile/reg_file_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|test_env    | unitateMem/ram_reg         | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|test_env    | reggisterFile/reg_file_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|test_env    | unitateMem/ram_reg         | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     5|
+|3     |LUT1     |     1|
+|4     |LUT3     |     8|
+|5     |LUT5     |     9|
+|6     |LUT6     |     4|
+|7     |MUXF7    |     2|
+|8     |RAM64X1S |     4|
+|9     |FDRE     |    17|
+|10    |IBUF     |     4|
+|11    |OBUF     |    26|
+|12    |OBUFT    |     5|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1409.859 ; gain = 499.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1409.859 ; gain = 595.105
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.859 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 4 instances
+
+Synth Design complete, checksum: 28683e61
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 145 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1409.859 ; gain = 989.824
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/barna/OneDrive/Desktop/an2-sem2/ac/test_env/test_env.runs/synth_1/test_env.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_env_utilization_synth.rpt -pb test_env_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 16 17:26:38 2024...
